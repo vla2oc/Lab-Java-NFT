@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Yoots</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body, html {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<div th:insert="block/header :: header"></div>
+<main>
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Create your own NFT</h1>
+                <p class="lead text-body-secondary">Transform your creativity into digital assets and join the NFT revolution with Yoots. Whether you’re looking to monetize your art, explore new creative avenues, or invest in the future of digital ownership, our platform is your gateway to endless possibilities.</p>
+                <p>
+                    <a href="/create" class="btn btn-primary my-2">Create NFT</a>
+                    <a href="/support" class="btn btn-secondary my-2">How does it work?</a> <!-- Исправлено "How is it work?" на "How does it work?" -->
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%"  src="/peng2.jpg">
+                        <div class="card-body">
+                            <p class="card-text">Pudgy Penguin #2434</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><a class="btn" href="/create">Create your owm NFT</a></button>
+                                </div>
+                                <small class="text-body-secondary  fw-bold">3 ETH</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%"  src="/peng3.jpg">
+                        <div class="card-body">
+                            <p class="card-text">Pudgy Penguin #2424</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><a class="btn" href="/create">Create your owm NFT</a></button>
+                                </div>
+                                <small class="text-body-secondary  fw-bold">1 ETH</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" src="/peng4.jpg">
+                        <div class="card-body">
+                            <p class="card-text">Pudgy Penguin #1434</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><a class="btn" href="/create">Create your owm NFT</a></button>
+                                </div>
+                                <small class="text-body-secondary  fw-bold">1.5 ETH</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<div th:insert="block/footer :: footer"></div>
+
+<!-- Скрипты Bootstrap и Popper.js с CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
